@@ -8,6 +8,7 @@ import com.kotlin.meteo.App
 import com.kotlin.meteo.R
 import com.kotlin.meteo.Weather.WeatherActivity
 import com.kotlin.meteo.Weather.WeatherFragment
+import kotlinx.android.synthetic.main.activity_main.*
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
 

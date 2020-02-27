@@ -26,7 +26,7 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/colorPrimary"
+                android:background="#3490dc"
                 android:orientation="vertical">
 
                 <TextView
@@ -34,14 +34,14 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
-                    tools:text="Toulouse"
                     android:textSize="30sp"
                     android:textStyle="bold"
                     app:fontFamily="sans-serif-condensed"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.059"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="Toulouse" />
 
                 <ImageView
                     android:id="@+id/weather_icon"
@@ -61,10 +61,10 @@
                     android:id="@+id/weather_description"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#D3D0CF"
                     android:textSize="20sp"
                     app:fontFamily="sans-serif-condensed"
-                    android:textColor="#D3D0CF"
-                    android:layout_marginTop="10dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.047"
                     app:layout_constraintStart_toStartOf="parent"
@@ -76,13 +76,13 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="12dp"
-                    tools:text="30°C"
                     android:textSize="60sp"
                     app:fontFamily="sans-serif-condensed"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.056"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/weather_description" />
+                    app:layout_constraintTop_toBottomOf="@+id/weather_description"
+                    tools:text="30°C" />
 
                 <TextView
                     android:id="@+id/temp_min_label"
@@ -149,7 +149,7 @@
                 android:id="@+id/cardView_2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/colorPrimary"
+                android:background="#3490dc"
                 android:orientation="vertical">
 
                 <ImageView
@@ -271,7 +271,7 @@
                     android:id="@+id/wind_icon"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="40dp"
+                    android:layout_marginStart="32dp"
                     android:layout_marginTop="90dp"
                     app:layout_constraintStart_toEndOf="@+id/humidity_data"
                     app:layout_constraintTop_toBottomOf="@+id/sunRise_sunSet"
@@ -305,11 +305,9 @@
                     android:id="@+id/pressure_data"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="10dp"
-                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="8dp"
                     android:layout_marginTop="6dp"
                     android:layout_marginEnd="24dp"
-                    android:layout_marginRight="24dp"
                     android:layout_marginBottom="6dp"
                     android:textSize="22sp"
                     app:fontFamily="sans-serif-condensed"
