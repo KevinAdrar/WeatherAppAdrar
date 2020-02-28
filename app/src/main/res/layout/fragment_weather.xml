@@ -317,6 +317,87 @@
                     app:layout_constraintTop_toTopOf="@+id/pressure_icon"
                     tools:text="1003hpa" />
 
+                <TextView
+                    android:id="@+id/Next5days"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="80dp"
+                    android:layout_marginBottom="241dp"
+                    android:text="Next 5 days"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    app:fontFamily="sans-serif-condensed"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/wind_icon" />
+
+                <TextView
+                    android:id="@+id/Day1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="170dp"
+                    android:text="Day1"
+                    android:textSize="18sp"
+                    app:fontFamily="sans-serif-condensed"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/Day2"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <TextView
+                    android:id="@+id/Day2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="170dp"
+                    android:text="Day2"
+                    android:textSize="18sp"
+                    app:fontFamily="sans-serif-condensed"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/Day3"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/Day1" />
+
+                <TextView
+                    android:id="@+id/Day3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="170dp"
+                    android:text="Day3"
+                    android:textSize="18sp"
+                    app:fontFamily="sans-serif-condensed"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/Day4"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/Day2" />
+
+                <TextView
+                    android:id="@+id/Day4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="170dp"
+                    android:text="Day4"
+                    android:textSize="18sp"
+                    app:fontFamily="sans-serif-condensed"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/Day5"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/Day3" />
+
+                <TextView
+                    android:id="@+id/Day5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="170dp"
+                    android:text="Day5"
+                    android:textSize="18sp"
+                    app:fontFamily="sans-serif-condensed"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/Day4" />
+
             </androidx.constraintlayout.widget.ConstraintLayout>
 
         </androidx.cardview.widget.CardView>

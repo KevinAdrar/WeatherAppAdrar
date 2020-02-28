@@ -31,12 +31,12 @@
         app:layout_constraintTop_toTopOf="parent"
         app:lottie_autoPlay="true"
         app:lottie_fileName="2594-a-simple-sun-day.json"
-        app:lottie_loop="false" />
+        app:lottie_loop="false"/>
 
 
     <Button
         android:id="@+id/button_start"
-        style="@style/Widget.AppCompat.Button.Colored"
+        style="@style/AppTheme.RoundedCornerMaterialButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="24dp"
