@@ -11,4 +11,5 @@ data class Weather (val description: String,
                     val sunrise: Int,
                     val sunset: Int,
                     val speed: Float,
-                    val timezone: Int)
+                    val timezone: Int,
+                    val iconId: Int)

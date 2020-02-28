@@ -16,6 +16,7 @@ fun mapOpenWeatherDataToWeather(weatherWrapper: WeatherWrapper) : Weather {
         sunrise = weatherWrapper.sys.sunrise,
         sunset = weatherWrapper.sys.sunset,
         speed = weatherWrapper.wind.speed,
-        timezone = weatherWrapper.timezone
+        timezone = weatherWrapper.timezone,
+        iconId = weather.id
     )
 }

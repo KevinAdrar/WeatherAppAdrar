@@ -15,14 +15,11 @@ import com.kotlin.meteo.App
 import com.kotlin.meteo.OpenWeatherMap.WeatherWrapper
 import com.kotlin.meteo.OpenWeatherMap.mapOpenWeatherDataToWeather
 import com.kotlin.meteo.R
-import com.squareup.picasso.Picasso
-import kotlinx.android.synthetic.main.fragment_weather.*
+import com.kotlin.meteo.Utils.Utilities
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 import java.text.SimpleDateFormat
-import java.time.LocalDateTime
-import java.time.format.DateTimeFormatter
 import java.util.*
 
 class WeatherFragment: Fragment() {
@@ -115,10 +112,16 @@ class WeatherFragment: Fragment() {
     }
 
     fun updateUi(weather: Weather) {
-        Picasso.get()
-            .load(weather.iconUrl)
-            .placeholder(R.drawable.ic_cloud_off_black_24dp)
-            .into(weatherIcon)
+//        Picasso.get()
+//            .load(weather.iconUrl)
+//            .placeholder(R.drawable.ic_cloud_off_black_24dp)
+//            .into(weatherIcon)
+        Utilities.getIconUri(weather.iconId)?.let {
+            val iconId = resources.getIdentifier(it, null, context?.packageName)
+
+            val iconDrawable = resources.getDrawable(iconId)
+            weatherIcon.setImageDrawable(iconDrawable)
+        }
 
         weatherDescription.text = weather.description
         temperature.text = getString(R.string.weather_temperature_value, weather.temperature.toInt())

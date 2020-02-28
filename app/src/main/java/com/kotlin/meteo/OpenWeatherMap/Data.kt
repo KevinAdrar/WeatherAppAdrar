@@ -9,7 +9,8 @@ data class WeatherWrapper(val weather: Array<WeatherData>,
                           val timezone: Int)
 
 class WeatherData(val description: String,
-                  val icon: String)
+                  val icon: String,
+                  val id: Int)
 
 data class MainData(val temp: Float,
                     val pressure: Int,
